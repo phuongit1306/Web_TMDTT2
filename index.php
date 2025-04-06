@@ -10,21 +10,28 @@
     <div class="wrapper">
         <div class="header"></div>
         <div class="menu">
-            <ul>
+            <ul class="list_menu">
                 <li> <a href="index.php">Trang Chủ</a></li>
                 <li> <a href="#">Danh Mục Sản Phẩm</a></li>
                 <li> <a href="#">Giỏ Hàng</a></li>
                 <li> <a href="#">Tin Tức</a></li>
                 <li> <a href="#">Liên Hệ</a></li>
-                
             </ul>
         </div>
         <div id="main">
             <div class="sidebar">
-                Sidebar
+            <ul class="list_sidebar">
+                <li> <a href="#">Laptop</a></li>
+                <li> <a href="#">PC</a></li>
+                <li> <a href="#">Màn hình</a></li>
+                <li> <a href="#">Bàn phím</a></li>
+                <li> <a href="#">Chuột + Lót chuột</a></li>
+                <li> <a href="#">Tai nghe</a></li>
+                <li> <a href="#">Ghế - bàn</a></li>
+            </ul>
             </div>
             <div class="maincontent">
-                Main content
+                maincontent
             </div>
         </div>
         <div class="footer">
