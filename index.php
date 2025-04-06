@@ -31,11 +31,69 @@
             </ul>
             </div>
             <div class="maincontent">
-                maincontent
+                <ul class="product_list">
+                    <li>
+                        <a href="">
+                            <img src="images/Laptop Lenovo V14 G4 IRU 83A0000TVN.jpg" >
+                            <p class="title_product">Laptop Lenovo V14 G4 IRU 83A0000TVN</p>
+                        </a>
+                        <p class="price_product">10.490.000₫</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/Laptop Lenovo V14 G4 IRU 83A0000TVN.jpg" >
+                            <p class="title_product">Laptop Lenovo V14 G4 IRU 83A0000TVN</p>
+                        </a>
+                        <p class="price_product">10.490.000₫</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/Laptop Lenovo V14 G4 IRU 83A0000TVN.jpg" >
+                            <p class="title_product">Laptop Lenovo V14 G4 IRU 83A0000TVN</p>
+                        </a>
+                        <p class="price_product">10.490.000₫</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/Laptop Lenovo V14 G4 IRU 83A0000TVN.jpg" >
+                            <p class="title_product">Laptop Lenovo V14 G4 IRU 83A0000TVN</p>
+                        </a>
+                        <p class="price_product">10.490.000₫</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/Laptop Lenovo V14 G4 IRU 83A0000TVN.jpg" >
+                            <p class="title_product">Laptop Lenovo V14 G4 IRU 83A0000TVN</p>
+                        </a>
+                        <p class="price_product">10.490.000₫</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/Laptop Lenovo V14 G4 IRU 83A0000TVN.jpg" >
+                            <p class="title_product">Laptop Lenovo V14 G4 IRU 83A0000TVN</p>
+                        </a>
+                        <p class="price_product">10.490.000₫</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/Laptop Lenovo V14 G4 IRU 83A0000TVN.jpg" >
+                            <p class="title_product">Laptop Lenovo V14 G4 IRU 83A0000TVN</p>
+                        </a>
+                        <p class="price_product">10.490.000₫</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/Laptop Lenovo V14 G4 IRU 83A0000TVN.jpg" >
+                            <p class="title_product">Laptop Lenovo V14 G4 IRU 83A0000TVN</p>
+                        </a>
+                        <p class="price_product">10.490.000₫</p>
+                    </li>
+                    
+                </ul>
             </div>
         </div>
         <div class="footer">
-            <p>footer</p>
+            <p class="footer_copyright">Copyright by NGUYENTHANHPHUONG StoreGamingGear 2025</p>
         </div>
     </div>
 </body>
