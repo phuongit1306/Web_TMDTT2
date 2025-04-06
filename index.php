@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web phụ kiện máy tính</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header"></div>
+        <div class="menu">
+            <ul>
+                <li> <a href="index.php">Trang Chủ</a></li>
+                <li> <a href="#">Danh Mục Sản Phẩm</a></li>
+                <li> <a href="#">Giỏ Hàng</a></li>
+                <li> <a href="#">Tin Tức</a></li>
+                <li> <a href="#">Liên Hệ</a></li>
+                
+            </ul>
+        </div>
+        <div id="main">
+            <div class="sidebar">
+                Sidebar
+            </div>
+            <div class="maincontent">
+                Main content
+            </div>
+        </div>
+        <div class="footer">
+            <p>footer</p>
+        </div>
+    </div>
+</body>
+</html>
