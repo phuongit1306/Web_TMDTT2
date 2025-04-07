@@ -5,8 +5,7 @@
                     {
                         $tam = $_GET['action'];
                         $query = $_GET['query'];
-                    }
-                    else{
+                    }else{
                         $tam = '';
                         $query = '';
                     }
@@ -14,22 +13,15 @@
                     {
                         include("modules/quanlydanhmucsp/them.php");
                         include("modules/quanlydanhmucsp/lietke.php");
-                    }elseif($tam== 'quanlydanhmucsanpham' && $query=='sua')
-                    {
+                    }elseif($tam== 'quanlydanhmucsanpham' && $query=='sua'){
                         include("modules/quanlydanhmucsp/sua.php");
-                    }
-                    elseif($tam== 'quanlysanpham' && $query=='them')
-                    {
+                    }elseif($tam== 'quanlysp' && $query=='them'){
                         include("modules/quanlysp/them.php");
                         include("modules/quanlysp/lietke.php");
-                    }
-
-                    elseif($tam== 'quanlysanpham' && $query=='sua')
+                    }elseif($tam== 'quanlysp' && $query=='sua')
                     {
                         include("modules/quanlysp/sua.php");
-                    }
-
-                    else
+                    }else
                     {
                         include("modules/dashboard.php");
                     } 
