@@ -43,7 +43,6 @@
                     <?php
                     }
                     ?>
-
                 </select>
             </td>
         </tr>
