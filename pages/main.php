@@ -8,25 +8,20 @@
                     if(isset($_GET['quanly']))
                     {
                         $tam = $_GET['quanly'];
-                    }
-                    else{
+                    }else{
                         $tam = '';
                     }
-                    if($tam == 'danhmucsanpham')
-                    {
+                    if($tam == 'danhmucsanpham'){
                         include("main/danhmuc.php");
-                    }
-                    else if($tam == 'giohang'){
+                    }else if($tam == 'giohang'){
                         include("main/giohang.php");
-                    }
-                    else if($tam == 'tintuc'){
+                    }else if($tam == 'tintuc'){
                         include("main/tintuc.php");
-                    }
-                    else if($tam == 'lienhe'){
+                    }else if($tam == 'lienhe'){
                         include("main/lienhe.php");
-                    }
-                    else
-                    {
+                    }else if($tam == 'sanpham'){
+                        include("main/sanpham.php");
+                    }else{
                         include("main/index.php");
                     }
                 ?>
