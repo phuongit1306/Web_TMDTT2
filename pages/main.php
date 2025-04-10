@@ -21,6 +21,12 @@
                         include("main/lienhe.php");
                     }else if($tam == 'sanpham'){
                         include("main/sanpham.php");
+                    }else if($tam == 'dangky'){
+                        include("main/dangky.php");
+                    }else if($tam == 'thanhtoan'){
+                        include("main/thanhtoan.php");
+                    }else if($tam == 'dangnhap'){
+                        include("main/dangnhap.php");
                     }else{
                         include("main/index.php");
                     }
