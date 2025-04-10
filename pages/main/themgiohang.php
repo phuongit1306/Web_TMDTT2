@@ -1,9 +1,64 @@
 <?php
 session_start();
 include('../../admincp/config/config.php');
+//them so luong
+if(isset($_GET['cong'])){
+    $id=$_GET['cong'];
+    foreach($_SESSION['cart'] as $cart_item){
+        if($cart_item['id']!=$id){
+            $product[] = array('tensanpham'=>$cart_item['tensanpham'],'id'=>$cart_item['id'], 'soluong'=>$cart_item['soluong'],'giasp'=>$cart_item['giasp'],'hinhanh'=>$cart_item['hinhanh'],'masp'=>$cart_item['masp']);
+            $_SESSION['cart'] = $product;
+        }else{
+            $tangsoluong = $cart_item['soluong'] + 1;
+            if($cart_item['soluong']<=9){
 
+                $product[] = array('tensanpham'=>$cart_item['tensanpham'],'id'=>$cart_item['id'], 'soluong'=>$tangsoluong,'giasp'=>$cart_item['giasp'],'hinhanh'=>$cart_item['hinhanh'],'masp'=>$cart_item['masp']);
+            }else{
+                $product[] = array('tensanpham'=>$cart_item['tensanpham'],'id'=>$cart_item['id'], 'soluong'=>$cart_item['soluong'],'giasp'=>$cart_item['giasp'],'hinhanh'=>$cart_item['hinhanh'],'masp'=>$cart_item['masp']);
+            }
+            $_SESSION['cart'] = $product;
+        }
+    }
+    header('Location:../../index.php?quanly=giohang');
+}
 
+//tru so luong sp
+if(isset($_GET['tru'])){
+    $id=$_GET['tru'];
+    foreach($_SESSION['cart'] as $cart_item){
+        if($cart_item['id']!=$id){
+            $product[] = array('tensanpham'=>$cart_item['tensanpham'],'id'=>$cart_item['id'], 'soluong'=>$cart_item['soluong'],'giasp'=>$cart_item['giasp'],'hinhanh'=>$cart_item['hinhanh'],'masp'=>$cart_item['masp']);
+            $_SESSION['cart'] = $product;
+        }else{
+            $tangsoluong = $cart_item['soluong'] - 1;
+            if($cart_item['soluong']>1){
+                $product[] = array('tensanpham'=>$cart_item['tensanpham'],'id'=>$cart_item['id'], 'soluong'=>$tangsoluong,'giasp'=>$cart_item['giasp'],'hinhanh'=>$cart_item['hinhanh'],'masp'=>$cart_item['masp']);
+            }else{
+                $product[] = array('tensanpham'=>$cart_item['tensanpham'],'id'=>$cart_item['id'], 'soluong'=>$cart_item['soluong'],'giasp'=>$cart_item['giasp'],'hinhanh'=>$cart_item['hinhanh'],'masp'=>$cart_item['masp']);
+            }
+            $_SESSION['cart'] = $product;
+        }
+    }
+    header('Location:../../index.php?quanly=giohang');
+}
 
+//xoasp
+if(isset($_SESSION['cart']) && isset($_GET['xoa'])){
+    $id=$_GET['xoa'];
+    foreach($_SESSION['cart'] as $cart_item){
+        if($cart_item['id']!=$id){
+            $product[] = array('tensanpham'=>$cart_item['tensanpham'],'id'=>$cart_item['id'], 'soluong'=>$cart_item['soluong'],'giasp'=>$cart_item['giasp'],'hinhanh'=>$cart_item['hinhanh'],'masp'=>$cart_item['masp']);
+        }
+        $_SESSION['cart'] = $product;
+        header('Location:../../index.php?quanly=giohang');
+    }
+}
+
+//xoatatca
+if(isset($_GET['xoatatca'])&&$_GET['xoatatca']==1){
+    unset($_SESSION['cart']);
+    header('Location:../../index.php?quanly=giohang');
+}
 
 if(isset($_POST['themgiohang'])){
     $id=$_GET['idsanpham'];
@@ -25,7 +80,7 @@ if(isset($_POST['themgiohang'])){
                     $found = true;
                 }else{
                     //neu du lieu ko trung
-                    $product[] = array('tensanpham'=>$cart_item['tensanpham'],'id'=>$cart_item['id'], 'soluong'=>$soluong,'giasp'=>$cart_item['giasp'],'hinhanh'=>$cart_item['hinhanh'],'masp'=>$cart_item['masp']);
+                    $product[] = array('tensanpham'=>$cart_item['tensanpham'],'id'=>$cart_item['id'], 'soluong'=>$cart_item['soluong'],'giasp'=>$cart_item['giasp'],'hinhanh'=>$cart_item['hinhanh'],'masp'=>$cart_item['masp']);
                 }
             }
             if($found == false){
