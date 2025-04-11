@@ -18,24 +18,29 @@ $query_lietke_dh = mysqli_query($mysqli,$sql_lietke_dh);
 
 <?php
     $i = 0;
+    $tongtien = 0;
     while($row = mysqli_fetch_array($query_lietke_dh)){
         $i++;
+        $thanhtien = $row['giasp']*$row['soluongmua'];
+        $tongtien += $thanhtien;
 ?>
 
-        </tr>
+        <tr>
             <td><?php echo $i ?></td>
             <td><?php echo $row['code_cart'] ?></td>
             <td><?php echo $row['tensanpham'] ?></td>
             <td><?php echo $row['soluongmua'] ?></td>
-            <td><?php echo $row['giasp'] ?></td>
-            <td><?php echo $row['giasp']*$row['soluongmua'] ?></td>
+            <td><?php echo number_format($row['giasp'],0,',','.').'vnđ'?></td>
+            <td><?php echo number_format($thanhtien,0,',','.').'vnđ' ?></td>
 
-            <td>
-               
-            </td>
         </tr>
 
 <?php
     }
 ?>
+        <tr>
+            <td colspan="6">
+               <p>Tổng tiền :<?php echo number_format($tongtien,0,',','.').'vnđ' ?></p>
+            </td>
+        </tr>
 </table>
