@@ -64,7 +64,7 @@ if(isset($_SESSION['cart'])){
             <?php
                 if(isset($_SESSION['dangky'])){
                   ?>
-                  <p><a href="index.php?quanly=thanhtoan">Đặt hàng</a></p>
+                  <p><a href="pages/main/thanhtoan.php">Đặt hàng</a></p>
                 <?php
                 }else{
                   ?>
