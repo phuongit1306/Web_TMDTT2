@@ -6,7 +6,7 @@
         $dienthoai = $_POST['dienthoai'];
         $matkhau = md5($_POST['matkhau']);
         $diachi = $_POST['diachi'];
-        $sql_dangky = mysqli_query($mysqli,"INSERT INTO tbl_dangky(tenkhachhang,email,diachi,matkhau,dienthoai) VALUE('".$tenkhachhang."','".$email."','".$dienthoai."','".$matkhau."','".$diachi."')");
+        $sql_dangky = mysqli_query($mysqli,"INSERT INTO tbl_dangky(tenkhachhang,email,diachi,matkhau,dienthoai) VALUE('".$tenkhachhang."','".$email."','".$diachi."','".$matkhau."','".$dienthoai."')");
         if($sql_dangky){
             echo '<p style="color:green">Bạn đã đăng ký thành công</p>';
 
