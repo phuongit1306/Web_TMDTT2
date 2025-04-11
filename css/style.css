@@ -219,6 +219,195 @@ p.footer_copyright {
         margin-bottom: 10px;
     }
 }
+
+/* Background và font đậm chất gaming */
+body {
+    background: linear-gradient(#0f0f0f, #1c1c1c);
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+}
+
+/* Thêm viền neon cho wrapper */
+.wrapper {
+    border: 2px solid #00ffe7;
+    box-shadow: 0 0 15px #00ffe7;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Menu style cải thiện */
+.menu {
+    background: #111;
+    border: none;
+    box-shadow: 0 2px 10px #00ffe7;
+}
+
+ul.list_menu li {
+    background: #222;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+ul.list_menu li:hover {
+    background: #00ffe7;
+}
+ul.list_menu li a {
+    color: #00ffe7;
+    font-weight: bold;
+}
+
+/* Main content với border neon */
+#main {
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 1px solid #00ffe7;
+    box-shadow: inset 0 0 10px #00ffe7;
+}
+
+/* Sản phẩm hiển thị với hiệu ứng gaming */
+ul.product_list li {
+    background-color: #1a1a1a;
+    box-shadow: 0 0 10px #00ffe7;
+    transition: transform 0.3s ease;
+}
+ul.product_list li:hover {
+    transform: scale(1.05);
+}
+
+/* Button giỏ hàng */
+input.themgiohang {
+    background: #00ffe7;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+}
+input.themgiohang:hover {
+    background: #ff1aff;
+    color: #fff;
+}
+
+.footer {
+    background: #fff !important;
+    border: none;
+    box-shadow: 0 -2px 5px #00ffe7;
+    color: #000;
+}
+
+.footer-section h3,
+.footer-section ul li a {
+    color: #000;
+}
+
+.footer-section ul li a:hover {
+    color: red;
+}
+
+p.footer_copyright {
+    color: #000;
+}
+
+/* Thêm quảng cáo bên trái/phải */
+.ads-left, .ads-right {
+    position: fixed;
+    top: 100px;
+    width: 100px;
+    height: auto;
+    z-index: 999;
+}
+.ads-left {
+    left: 10px;
+}
+.ads-right {
+    right: 10px;
+}
+.ads-left img, .ads-right img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffe7;
+}
+.sidebar {
+    border: 2px solid #00ffe7;
+    box-shadow: 0 0 10px #00ffe7;
+    background-color: #1a1a1a;
+    color: #fff;
+    width: 18%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ul.list_sidebar li {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #222;
+    transition: background 0.3s, transform 0.2s;
+}
+
+ul.list_sidebar li:hover {
+    background-color: #00ffe7;
+    transform: translateX(5px);
+}
+
+ul.list_sidebar li a {
+    color: #00ffe7;
+    font-weight: bold;
+}
+
+ul.list_sidebar li:hover a {
+    color: #000;
+}
+
+ul.product_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    width: 100%;
+    gap: 20px;
+}
+
+ul.product_list li {
+    width: 22%;
+    background-color: #1a1a1a;
+    box-shadow: 0 0 15px #00ffe7;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 10px;
+}
+
+ul.product_list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ff1aff;
+}
+
+ul.product_list li img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #00ffe7;
+}
+
+p.title_product {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00ffe7;
+    margin: 10px 0 5px 0;
+}
+
+p.price_product {
+    font-size: 15px;
+    color: #ff1aff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+p.category_product {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 10px;
+    font-style: italic;
+}
 .clear{
     clear: both;
 }

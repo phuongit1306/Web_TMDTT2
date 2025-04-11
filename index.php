@@ -10,8 +10,17 @@
     <title>Web phụ kiện máy tính</title>
 </head>
 <body>
+    <!-- Quảng cáo bên trái -->
+    <div class="ads-left">
+        <img src="images/quangcaotrai.jpg" alt="Quảng cáo gaming bên trái">
+    </div>
+
+    <!-- Quảng cáo bên phải -->
+    <div class="ads-right">
+        <img src="images/quangcaophai.jpg" alt="Quảng cáo gaming bên phải">
+    </div>
+
     <div class="wrapper">
-        
         <?php
         session_start();
         include("admincp/config/config.php");
@@ -20,7 +29,6 @@
         include("pages/main.php");
         include("pages/footer.php");
         ?>
-
     </div>
 </body>
 </html>
