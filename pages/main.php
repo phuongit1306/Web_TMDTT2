@@ -27,6 +27,8 @@
                         include("main/thanhtoan.php");
                     }else if($tam == 'dangnhap'){
                         include("main/dangnhap.php");
+                    }else if($tam == 'timkiem'){
+                        include("main/timkiem.php");
                     }else{
                         include("main/index.php");
                     }

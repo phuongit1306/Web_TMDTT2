@@ -33,5 +33,12 @@
                 ?>
                 <li> <a href="index.php?quanly=tintuc">Tin Tức</a></li>
                 <li> <a href="index.php?quanly=lienhe">Liên Hệ</a></li>
+
             </ul>
+            <p>
+                <form action="index.php?quanly=timkiem" method="POST">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm..." name="tukhoa">
+                    <input type="submit" name="timkiem" value="Tìm kiếm">
+                </form>
+            </p>
         </div>
