@@ -31,9 +31,6 @@
                 <?php
                 }
                 ?>
-                <li> <a href="index.php?quanly=tintuc">Tin Tức</a></li>
-                <li> <a href="index.php?quanly=lienhe">Liên Hệ</a></li>
-
             </ul>
             <p>
                 <form action="index.php?quanly=timkiem" method="POST">

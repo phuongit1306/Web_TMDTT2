@@ -9,7 +9,6 @@ body{
     width: 90%;
     margin: 0 auto;
 }
-
 i.fa.fa-plus.fa-style{
     font-size: 20px;
     color: #000;
@@ -24,9 +23,6 @@ i.fa.fa-plus.fa-style:hover{
 i.fa.fa-minus.fa-style:hover{
     color: red;
 }
-
-
-
 .wrapper_chitiet{
     height: auto;
     width: 90%;
@@ -41,7 +37,6 @@ i.fa.fa-minus.fa-style:hover{
     width: 49%;
     margin:0 10px;
 }
-
 input.themgiohang{
     border: none;
     background: green;
@@ -50,7 +45,6 @@ input.themgiohang{
     font-size: 15px;
     cursor: pointer;
 }
-
 .header{
     background-image: url("../images/banner-2.jpg");
     background-repeat: no-repeat;
@@ -73,23 +67,19 @@ ul.list_menu{
     margin: 0 auto;
     line-height: 25px;
 }
-
 ul.list_menu li:hover {
     background: black;
 }
-
 ul.list_menu li a{
     text-decoration: none;
     text-align: center;
     color: white;
 }
-
 ul.list_menu li {
     float: left;
     margin: 7px;
     padding: 5px;
 }
-
 #main{
     border: 1px solid #00ff80;
     height: auto;
@@ -108,7 +98,6 @@ ul.list_menu li {
     margin-left: 5px;
     float: left;
 }
-
 ul.list_sidebar{
     padding: 0;
     width: 100%;
@@ -118,19 +107,16 @@ ul.list_sidebar{
 ul.list_sidebar li:hover {
     background: red;
 }
-
 ul.list_sidebar li a{
     text-decoration: none;
     text-align: left;
     color: black;
     display: block;
 }
-
 ul.list_sidebar li {
     margin: 7px;
     padding: 5px;
 }
-
 .maincontent{
     height: auto;
     width: 79%;
@@ -138,18 +124,15 @@ ul.list_sidebar li {
     margin-left: 5px;
     float: right;
 }
-
 ul.product_list{
     padding: 0;
     margin: 0;
     list-style: none;
     width: 100%;
 }
-
 ul.product_list li img{
     height: 190px;
 }
-
 ul.product_list li {
     width: 19%;
     border: 1px solid #ddd;
@@ -157,41 +140,85 @@ ul.product_list li {
     float: left;
     height: 300px;
 }
-
 ul.product_list li a{
     text-decoration: none;
 }
-
 ul.product_list li img{
     width: 100%;
 }
-
 p.price_product{
     text-align: center;
     color: red;
     font-size: 16px;
     font-weight: bold;
 }
-
 p.title_product{
     text-align: center;
     color: #000;
     font-size: 16px;
     font-weight: bold;
 }
-
-.footer{
-    border: 1px solid #ff1a8c;
-    height: 150px;
-    width: 100%;
-    background: #00cc99;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.8);
 }
-
-p.footer_copyright{
-    text-align: center;
+.footer-section {
+    width: 23%;
+    margin-bottom: 20px;
+}
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
     color: #000;
 }
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+.footer-section ul li a {
+    text-decoration: none;
+    color: #000;
+}
+.footer-section ul li a:hover {
+    color: red;
+}
+.social-icons a img {
+    width: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.footer {
+    background-image: url("../images/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 370px;
+    border: 1px solid #66ffff;
+    padding-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+p.footer_copyright {
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+}
+@media (max-width: 768px) {
+    .footer-section {
+        width: 100%;
+    }
 
+    .social-icons a img {
+        margin-bottom: 10px;
+    }
+}
 .clear{
     clear: both;
 }
