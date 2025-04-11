@@ -11,7 +11,7 @@
 
     }
 ?>
-<table style="width: 100%; text-align:center;border-collapse:collapse;" border="1">
+<table class="giohang-table">
 
   <tr>
     <th>Id</th>
@@ -50,7 +50,8 @@ if(isset($_SESSION['cart'])){
     
     <td><?php echo number_format($cart_item['giasp'],0,',','.').'vnđ'; ?></td>
     <td><?php echo number_format($thanhtien,0,',','.').'vnđ';  ?></td>
-    <td><a href="pages/main/themgiohang.php?xoa=<?php echo $cart_item['id'] ?>">Xóa</a></td>
+    <td><a class="button-action" href="pages/main/themgiohang.php?xoa=<?php echo $cart_item['id'] ?>">Xóa</a>
+    </td>
   </tr>
 
 <?php
@@ -59,16 +60,17 @@ if(isset($_SESSION['cart'])){
     <tr>
         <td colspan="8">
             <p style="float: left;">Tổng tiền: <?php echo number_format($tongtien,0,',','.').'vnđ';?></p><br/>
-            <p style="float: right;"><a href="pages/main/themgiohang.php?xoatatca=1">Xóa tất cả</a></p>
+            <p style="float: right;"><a class="btn-delete-all" href="pages/main/themgiohang.php?xoatatca=1">🗑️ Xóa tất cả</a></p>
             <div style="clear:both;"></div>
             <?php
                 if(isset($_SESSION['dangky'])){
                   ?>
-                  <p><a href="pages/main/thanhtoan.php">Đặt hàng</a></p>
+                  <p><a class="btn-checkout" href="pages/main/thanhtoan.php">🛒 Đặt hàng</a></p>
                 <?php
                 }else{
                   ?>
-                <p><a href="index.php?quanly=dangky">Đăng ký đặt hàng</a></p>
+                <p><a class="btn-register-order" href="index.php?quanly=dangky">📝 Đăng ký đặt hàng</a></p>
+
                 <?php
                 }
                 ?>
@@ -80,7 +82,7 @@ if(isset($_SESSION['cart'])){
 ?>
 
   <tr>
-    <td colspan="8"><p>Giỏ hàng hiện tại đang trống</p></td>
+  <td colspan="8" class="empty-cart"><p>Giỏ hàng hiện tại đang trống</p></td>
   </tr>
 
 <?php

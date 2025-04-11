@@ -219,28 +219,24 @@ p.footer_copyright {
         margin-bottom: 10px;
     }
 }
-
 /* Background và font đậm chất gaming */
 body {
     background: linear-gradient(#0f0f0f, #1c1c1c);
     font-family: 'Orbitron', sans-serif;
     color: #fff;
 }
-
 /* Thêm viền neon cho wrapper */
 .wrapper {
     border: 2px solid #00ffe7;
     box-shadow: 0 0 15px #00ffe7;
     background-color: rgba(0, 0, 0, 0.9);
 }
-
 /* Menu style cải thiện */
 .menu {
     background: #111;
     border: none;
     box-shadow: 0 2px 10px #00ffe7;
 }
-
 ul.list_menu li {
     background: #222;
     border-radius: 5px;
@@ -253,14 +249,12 @@ ul.list_menu li a {
     color: #00ffe7;
     font-weight: bold;
 }
-
 /* Main content với border neon */
 #main {
     background-color: rgba(20, 20, 20, 0.9);
     border: 1px solid #00ffe7;
     box-shadow: inset 0 0 10px #00ffe7;
 }
-
 /* Sản phẩm hiển thị với hiệu ứng gaming */
 ul.product_list li {
     background-color: #1a1a1a;
@@ -270,7 +264,6 @@ ul.product_list li {
 ul.product_list li:hover {
     transform: scale(1.05);
 }
-
 /* Button giỏ hàng */
 input.themgiohang {
     background: #00ffe7;
@@ -282,27 +275,22 @@ input.themgiohang:hover {
     background: #ff1aff;
     color: #fff;
 }
-
 .footer {
     background: #fff !important;
     border: none;
     box-shadow: 0 -2px 5px #00ffe7;
     color: #000;
 }
-
 .footer-section h3,
 .footer-section ul li a {
     color: #000;
 }
-
 .footer-section ul li a:hover {
     color: red;
 }
-
 p.footer_copyright {
     color: #000;
 }
-
 /* Thêm quảng cáo bên trái/phải */
 .ads-left, .ads-right {
     position: fixed;
@@ -331,7 +319,6 @@ p.footer_copyright {
     padding: 10px;
     border-radius: 10px;
 }
-
 ul.list_sidebar li {
     margin: 5px 0;
     padding: 10px;
@@ -339,21 +326,17 @@ ul.list_sidebar li {
     background-color: #222;
     transition: background 0.3s, transform 0.2s;
 }
-
 ul.list_sidebar li:hover {
     background-color: #00ffe7;
     transform: translateX(5px);
 }
-
 ul.list_sidebar li a {
     color: #00ffe7;
     font-weight: bold;
 }
-
 ul.list_sidebar li:hover a {
     color: #000;
 }
-
 ul.product_list {
     display: flex;
     flex-wrap: wrap;
@@ -364,7 +347,6 @@ ul.product_list {
     width: 100%;
     gap: 20px;
 }
-
 ul.product_list li {
     width: 22%;
     background-color: #1a1a1a;
@@ -375,38 +357,160 @@ ul.product_list li {
     text-align: center;
     padding: 10px;
 }
-
 ul.product_list li:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px #ff1aff;
 }
-
 ul.product_list li img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-bottom: 1px solid #00ffe7;
 }
-
 p.title_product {
     font-size: 16px;
     font-weight: bold;
     color: #00ffe7;
     margin: 10px 0 5px 0;
 }
-
 p.price_product {
     font-size: 15px;
     color: #ff1aff;
     font-weight: bold;
     margin-bottom: 5px;
 }
-
 p.category_product {
     font-size: 13px;
     color: #aaa;
     margin-bottom: 10px;
     font-style: italic;
+}
+/* Bảng giỏ hàng */
+table.giohang-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px #00ffe7;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+table.giohang-table th, table.giohang-table td {
+    padding: 12px;
+    border: 1px solid #00ffe7;
+    text-align: center;
+}
+table.giohang-table th {
+    background-color: #111;
+    color: #00ffe7;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+table.giohang-table td img {
+    width: 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #00ffe7;
+}
+/* Nút xóa, đặt hàng, đăng ký */
+a.button-action {
+    background-color: #00ffe7;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+    margin: 5px;
+}
+a.button-action:hover {
+    background-color: #ff1aff;
+    color: #fff;
+}
+/* Giỏ hàng trống */
+td.empty-cart {
+    background-color: #222;
+    color: #ff1aff;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+.btn-delete-all,
+.btn-checkout,
+.btn-register-order {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff1e1e;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+  margin-top: 10px;
+}
+.btn-checkout {
+  background-color: #007bff;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+.btn-register-order {
+  background-color: #28a745;
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+.btn-delete-all:hover,
+.btn-checkout:hover,
+.btn-register-order:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.05);
+}
+/* Search box gaming style */
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search-box form {
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    padding: 5px 10px;
+    border: 2px solid #00ffe7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00ffe7;
+}
+
+.search-input {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    width: 250px; /* Ngắn hơn */
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #00ffe7;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #ff1aff;
+    color: #fff;
 }
 .clear{
     clear: both;
